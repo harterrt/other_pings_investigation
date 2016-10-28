@@ -12,7 +12,7 @@ plotInc <- function(dd = getData()) {
   ggplot(data=dd, aes(x=date, weight=count, fill=is_esr_ping)) +
     geom_bar() +
     theme(axis.text.x = element_text(angle = 270, hjust = 1)) +
-    ylab("Number of Pings in 1% Sample") +
+    ylab("Count of 'Other' Pings in 1% Sample") +
     xlab("Submission Date")
 }
 
